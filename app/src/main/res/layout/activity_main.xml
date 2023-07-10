@@ -6,51 +6,59 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:rotationX="-360"
+    android:padding="10dp"
     tools:context=".MainActivity">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="Login"
-        android:textAlignment="center"
-        android:textColor="#673AB7"
-        android:textSize="50sp"
-        android:textStyle="bold|italic" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="40dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Enter your Email : "
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter your Email"
-            android:inputType="textWebEmailAddress" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Enter Password : "
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter password"
-            android:inputType="textPassword" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Validate"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+        android:text="Hello World Welcome"
+        android:textSize="30sp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name : "
+        android:id="@+id/tvName"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:id="@+id/etName"
+        android:inputType="textPersonName|textCapWords"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your class roll no : "
+        android:id="@+id/tvRollNo"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter rollno"
+        android:id="@+id/etRollNo"
+        android:inputType="number" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your height : "
+        android:id="@+id/tvHeight"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your height"
+        android:inputType="numberDecimal" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Validate"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 </LinearLayout>
